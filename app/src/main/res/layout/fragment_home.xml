@@ -1,0 +1,54 @@
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmedx64.room_database_pasheer.HomeFragment">
+
+
+    <Button
+        android:id="@+id/adduser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Add User"
+        app:layout_constraintBottom_toTopOf="@+id/btn-viewuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn-viewuser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="view user"
+        app:layout_constraintBottom_toTopOf="@+id/btn_deleteuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adduser" />
+
+    <Button
+        android:id="@+id/btn_deleteuser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="delete user"
+        app:layout_constraintBottom_toTopOf="@+id/btn_updateuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn-viewuser" />
+
+    <Button
+        android:id="@+id/btn_updateuser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="update user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_deleteuser" />
+</android.support.constraint.ConstraintLayout>
